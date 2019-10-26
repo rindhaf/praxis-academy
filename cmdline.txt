@@ -7,3 +7,4 @@ Daftar Commandline yang pernah dicoba
 5. rm
 6. vim
 7. mv
+8. dir

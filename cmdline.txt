@@ -1,0 +1,9 @@
+Daftar Commandline yang pernah dicoba
+
+1. ls
+2. mkdir
+3. cd
+4. cd ..
+5. rm
+6. vim
+7. mv

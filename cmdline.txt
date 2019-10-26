@@ -1,22 +1,107 @@
 Daftar Commandline yang pernah dicoba
 
 1. ls
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ ls
+cmdline.txt
+
 2. mkdir
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ hostname
+DESKTOP-B3AMJSU
+
 3. cd
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1 (ma ster)
+$ cd latihan
+
 4. cd ..
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ cd ..
+
 5. rm
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ git rm Coba.txt
+rm 'Coba.txt'
+
 6. vim
 7. mv
+
 8. dir
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ dir
+cmdline.txt
+
 9. help
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+
 10. copy
 11. find
 12. hostname
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ hostname
+DESKTOP-B3AMJSU
+
 13. nslookup ls
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ nslookup ls
+Server:  UnKnown
+Address:  192.168.43.1
+
+Name:    ls.
+
 14. print
 15. query
-16. md
+ARINDA@DESKTOP-B3AMJSU MINGW64 ~/Documents/kemampuan-dasar/kemampuan-dasar-1/lat ihan (master)
+$ query user
+ USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+>arinda                console             3  Active      17:50  26/10/2019 16:03
+
+16. query session
+
 17. chdir
-18. echo
-19. mklink
+18. log
+$ git log
+commit 1a6811296e459012b7c97f8d496a95912aa42158
+Author: rindhaf <rindhafajirul@gmail.com>
+Date:   Sat Oct 26 20:19:08 2019 +0700
+
+    first commit
+
+commit 2bbbb3e86429d38036e9f6c7f663ce8373df78f0
+Author: rindhaf <rindhafajirul@gmail.com>
+Date:   Sat Oct 26 19:59:25 2019 +0700
+
+    coba commit
+
+commit 73950b0a321d334960dff5cf777b879ae884e9bb
+Author: rindhaf <rindhafajirul@gmail.com>
+Date:   Sat Oct 26 19:55:24 2019 +0700
+
+    second commit
+
+commit 9b95b7fceced3466a2a675300fb598119d8c001a
+Author: rindhaf <rindhafajirul@gmail.com>
+Date:   Sat Oct 26 18:02:45 2019 +0700
+
+    first commit
+
+19. status
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmdline.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
 20. exit

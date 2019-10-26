@@ -8,3 +8,15 @@ Daftar Commandline yang pernah dicoba
 6. vim
 7. mv
 8. dir
+9. help
+10. copy
+11. find
+12. hostname
+13. nslookup ls
+14. print
+15. query
+16. md
+17. chdir
+18. echo
+19. mklink
+20. exit

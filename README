@@ -1,0 +1,48 @@
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba
+$ mkdir rhymes
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba
+$ cd rhymes
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes
+$ git init
+Initialized empty Git repository in E:/Pelatihan/Coba/rhymes/.git/
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ touch README.txt
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ git add README.txt
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ git commit -m "Firts Commit."
+[master (root-commit) ae09fdf] Firts Commit.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ echo 'This repo is a collection of my favorite nursery rhymes.' >> REAADME.txt
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        REAADME.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ git diff
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ git add README.txt
+
+ARINDA@DESKTOP-B3AMJSU MINGW64 /e/Pelatihan/Coba/rhymes (master)
+$ git commit -m 'Addedd project overview to README.txt'
+On branch master
+Untracked files:
+        REAADME.txt
+
+nothing added to commit but untracked files present

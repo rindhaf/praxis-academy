@@ -1,0 +1,3 @@
+Kernel linux berada di /boot
+
+/boot digunakan untuk file-file konfigurasi boot, kernel dan file lain yang dibutuhkan ketika booting

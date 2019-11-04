@@ -1,0 +1,39 @@
+Membuat direktori baru > mkdir
+Menampilkan direktori/file > ls
+Masuk kedalam direktori > cd
+Kembali ke direktori sebelumnya > cd ..
+Mengganti nama direktori > mv
+Membuat file > cat
+Menghapus direktori > rmdir
+Melakukan update > sudo apt-get update
+Menghapus command yang ada di terminal > clear
+Mengecek versi kernel > uname -a
+
+root@rindha:~# mkdir coba
+
+root@rindha:~# ls
+ coba
+  
+root@rindha:~# cat coba
+
+root@rindha:~# cd coba
+
+root@rindha:~/coba# ls
+
+root@rindha:~/coba# cd ..
+
+root@rindha:~# mv coba newcoba
+newcoba   
+
+root@rindha:~# rmdir newcoba
+
+root@rindha:~# sudo apt-get update
+Get:1 http://packages.microsoft.com/repos/vscode stable InRelease [3,958 B]                             
+Hit:2 https://repo.skype.com/deb stable InRelease                                                       
+Hit:3 http://linux.teamviewer.com/deb stable InRelease                                                  
+Hit:5 http://wlglam.fsmg.org.nz/kali kali-rolling InRelease 
+
+root@rindha:~# uname -a
+Linux rindha 4.19.0-kali1-amd64 #1 SMP Debian 4.19.13-1kali1 (2019-01-03) x86_64 GNU/Linux
+
+root@rindha:~# clear

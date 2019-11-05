@@ -125,14 +125,28 @@ _Concept of Extreme Programming_
 	programming as a software-development discipline that organizes people to produce higher-quality software more productively.
 2. **Activites**, XP describes four basic activities that are 
 	performed within the software development process: coding, testing, listening, and designing. Each of those activities is described below. 
-	a. _Coding_, the advocates of XP argue that the only truly 
+	1. _Coding_, the advocates of XP argue that the only truly 
 		important product of the system development process is code – software instructions that a computer can interpret. Without code, there is no working product. Coding can be used to figure out the most suitable solution. Coding can also help to communicate thoughts about programming problems. 
-	b. _Testing_, Testing is central to extreme programming.
+	2. _Testing_, Testing is central to extreme programming.
 		Extreme programming's approach is that if a little testing can eliminate a few flaws, a lot of testing can eliminate many more flaws.
 		- Unit tests determine whether a given feature works as intended. Programmers write as many automated tests as they can think of that might "break" the code; if all tests run successfully, then the coding is complete. Every piece of code that is written is tested before moving on to the next feature.
 		- Acceptance tests verify that the requirements as understood by the programmers satisfy the customer's actual requirements.
-	c. _Listening_, Programmers must listen to what the customers need
+	3. _Listening_, Programmers must listen to what the customers need
 	 	the system to do, what "business logic" is needed. They must understand these needs well enough to give the customer feedback about the technical aspects of how the problem might be solved, or cannot be solved. Communication between the customer and programmer is further addressed in the planning game.  
-	 d. _Designing_, From the point of view of simplicity, of course 
-	 	one could say that system development doesn't need more than coding, testing and listening. If those activities are performed well, the result should always be a system that works.
-	 	
+	4. 	One could say that system development doesn't need more than 
+		coding, testing and listening. If those activities are performed well, the result should always be a system that works.
+3. **Values**, Extreme programming initially recognized four values in 
+	1999: communication, simplicity, feedback, and courage. A new value, respect, was added in the second edition of Extreme Programming Explained. Those five values are described below. 
+	1. _Communication_, Building software systems requires 
+		communicating system requirements to the developers of the system. In formal software development methodologies, this task is accomplished through documentation. Extreme programming techniques can be viewed as methods for rapidly building and disseminating institutional knowledge among members of a development team. The goal is to give all developers a shared view of the system which matches the view held by the users of the system. To this end, extreme programming favors simple designs, common metaphors, collaboration of users and programmers, frequent verbal communication, and feedback.
+	2. _Simplicity_, Extreme programming encourages starting with the 
+		simplest solution. Extra functionality can then be added later. The difference between this approach and more conventional system development methods is the focus on designing and coding for the needs of today instead of those of tomorrow, next week, or next month.
+	3. _Feedback_ Within extreme programming, feedback relates to 
+		different dimensions of the system development:
+    	Feedback from the system: by writing unit tests,[5] or running periodic integration tests, the programmers have direct feedback from the state of the system after implementing changes.
+    	Feedback from the customer: The functional tests (aka acceptance tests) are written by the customer and the testers. They will get concrete feedback about the current state of their system. This review is planned once in every two or three weeks so the customer can easily steer the development.
+    	Feedback from the team: When customers come up with new requirements in the planning game the team directly gives an estimation of the time that it will take to implement.
+    4. _Courage_, Several practices embody courage. One is the 
+    	commandment to always design and code for today and not for tomorrow. This is an effort to avoid getting bogged down in design and requiring a lot of effort to implement anything else.
+    5. _Respect_, The respect value includes respect for others as 
+    	well as self-respect. Programmers should never commit changes that break compilation, that make existing unit-tests fail, or that otherwise delay the work of their peers. Members respect their own work by always striving for high quality and seeking for the best design for the solution at hand through refactoring. 

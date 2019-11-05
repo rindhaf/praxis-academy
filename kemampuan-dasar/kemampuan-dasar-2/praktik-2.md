@@ -1,1 +1,1 @@
-![Screenshot Make a new organization](https://rindhaf.github.com/images/new-organization.png)
+![Screenshot Make a new organization](/root/Pictures/new-organization.png)

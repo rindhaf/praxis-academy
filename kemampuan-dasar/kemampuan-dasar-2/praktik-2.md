@@ -1,1 +1,1 @@
-![Gambar Membuat Organization Baru](https://rindhaf.github.com/images/Membuat-organization.png)
+![Screenshot Make a new organization](https://rindhaf.github.com/images/new-organization.png)

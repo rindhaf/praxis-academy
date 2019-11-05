@@ -150,3 +150,21 @@ _Concept of Extreme Programming_
     	commandment to always design and code for today and not for tomorrow. This is an effort to avoid getting bogged down in design and requiring a lot of effort to implement anything else.
     5. _Respect_, The respect value includes respect for others as 
     	well as self-respect. Programmers should never commit changes that break compilation, that make existing unit-tests fail, or that otherwise delay the work of their peers. Members respect their own work by always striving for high quality and seeking for the best design for the solution at hand through refactoring. 
+4. **Rules**
+	1. _Coding_, 
+		The customer is always available,
+		Code the unit test first,
+		Only one pair integrates code at a time,
+		Leave optimization.
+	2. _Testing_,
+		All code must have unit tests
+    	All code must pass all unit tests before it can be released.
+    	When a bug is found, tests are created before the bug is addressed (a bug is not an error in logic; it is a test that was not written)
+    	Acceptance tests are run often and the results are published.
+5. **Principles**
+	1. _Feedback_, Extreme programming sees feedback as most useful if 
+		it is done frequently and promptly. It stresses that minimal delay between an action and its feedback is critical to learning and making changes. Unlike traditional system development methods, contact with the customer occurs in more frequent iterations. The customer has clear insight into the system that is being developed, and can give feedback and steer the development as needed. With frequent feedback from the customer, a mistaken design decision made by the developer will be noticed and corrected quickly, before the developer spends much time implementing it. 
+	2. _Assuming simplicity_, This is about treating every problem as 
+		if its solution were "extremely simple". Traditional system development methods say to plan for the future and to code for reusability. Extreme programming rejects these ideas. 
+	3. _Embracing change_, The principle of embracing change is about 
+		not working against changes but embracing them. For instance, if at one of the iterative meetings it appears that the customer's requirements have changed dramatically, programmers are to embrace this and plan the new requirements for the next iteration. 

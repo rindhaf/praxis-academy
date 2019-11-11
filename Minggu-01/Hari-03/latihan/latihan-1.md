@@ -1,1 +1,1 @@
-![Gambar CRC Card Passenger] (/screensots/CRC-passenger.png)
+![Gambar CRC Card Passenger] (/screenshots/CRC-passenger.png)

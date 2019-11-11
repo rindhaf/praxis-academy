@@ -1,1 +1,1 @@
-![Gambar CRC Card Passenger] (/screenshots/CRC-passenger.png)
+![Gambar CRC Card Passenger] (https://github.com/rindhaf/praxis-academy/screenshots/CRC-passenger.png)

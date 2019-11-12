@@ -1,1 +1,2 @@
-![Gambar CRC Card Passenger] (https://github.com/rindhaf/praxis-academy/screenshots/CRC-passenger.png)
+Berikut ini gambar dari CRC Card Passenger
+![Gambar CRC Card Passenger](./screenshots/CRC-passenger.png)

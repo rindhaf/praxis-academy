@@ -59,34 +59,32 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
         print("\tYou deposited the amount of ", Deposit.getDeposit())
     
     def __init__(self):
-        select = 0
         choice = 0
 
-        print("====================================================")
-        print("\tWelcome to this simple ATM machine")
-        print("====================================================")
-        print()
-    
-<<<<<<< HEAD
-        if input1 < 4 :
-            print("\tPlease select ATM Transactions")
-            print("\tPress [1] Deposit")
-            print("\tPress [2] Withdraw")
-            print("\tPress [3] Balance Inquiry")
-            print("\tPress [4] Exit")
+    print("====================================================")
+    print("\tWelcome to this simple ATM machine")
+    print("====================================================")
+    print()
 
-            print("\n\tWhat would you like to do? ")
+    print("\tPlease select ATM Transactions")
+    print("\tPress [1] Deposit")
+    print("\tPress [2] Withdraw")
+    print("\tPress [3] Balance Inquiry")
+    print("\tPress [4] Exit")
 
-        ATMMachine()
-=======
-    if input1 < 4 :
-        print("\tPlease select ATM Transactions")
-        print("\tPress [1] Deposit")
-        print("\tPress [2] Withdraw")
-        print("\tPress [3] Balance Inquiry")
-        print("\tPress [4] Exit")
+    print("\n\tWhat would you like to do? ")
+        
 
-        print("\n\tWhat would you like to do? ")
-        input1 = input("Please enter your choice: ")
-    
->>>>>>> d32226badbd8be684aa56ee1e70f528bdf1a7d5c
+    select = 0
+    print("\n\tPlease select correct transaction.")
+    while True:
+        select = int(input("Please enter your choice: "))
+        if select == 1:
+            input("Enter the amount of money to deposit: ")
+            BalanceInquiry.balance = Deposit.deposit + BalanceInquiry.balance
+        elif select == 2:
+            print("\n\tTo withdraw, make sure that you have sufficient balance in your account.")
+            input("\tEnter amount of money to withdraw: ")
+        else:
+            print("\n\tTransaction exited.")
+        

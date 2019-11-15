@@ -64,11 +64,13 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
         print("\tWelcome to this simple ATM machine")
         print("====================================================")
     
-    if input1 > 4 :
-        print("\tPlease select ATM Transactions")
-        print("\tPress [1] Deposit")
-        print("\tPress [2] Withdraw")
-        print("\tPress [3] Balance Inquiry")
-        print("\tPress [4] Exit")
+        if input1 < 4 :
+            print("\tPlease select ATM Transactions")
+            print("\tPress [1] Deposit")
+            print("\tPress [2] Withdraw")
+            print("\tPress [3] Balance Inquiry")
+            print("\tPress [4] Exit")
 
-        print("\n\tWhat would you like to do? ")
+            print("\n\tWhat would you like to do? ")
+
+        ATMMachine()

@@ -1,15 +1,17 @@
-class Deposit():
-    deposit=100
+class Deposit:
+    'Class for process a deposit'
+    deposit = 0
     def __init__(self):
         print("Calling constructor for Deposit class")
 
-    def setDeposit(self, depo):
-        Deposit.deposit = depo
+    def setDeposit(self, deposit):
+        Deposit.deposit = deposit
     
     def getDeposit(self):
         print("Amount deposit", Deposit.deposit)
 
 class Withdraw:
+    'Class for process a withdraw'
     withdraw = 0
     def __init__(self):
         print("Calling constructur for Withdraw Class")
@@ -21,6 +23,7 @@ class Withdraw:
         print("Amount withdraw", Withdraw.withdraw)
 
 class BalanceInquiry:
+    'Class for process a balance inquiry'
     balance = 0
     def __init__(self):
         print("Calling constructor for Balance class")
@@ -56,14 +59,15 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
         print("\tYou deposited the amount of ", Deposit.getDeposit())
     
     def __init__(self):
-        input1 = input("Please enter your choice: ")
         select = 0
         choice = 0
 
         print("====================================================")
         print("\tWelcome to this simple ATM machine")
         print("====================================================")
+        print()
     
+<<<<<<< HEAD
         if input1 < 4 :
             print("\tPlease select ATM Transactions")
             print("\tPress [1] Deposit")
@@ -74,3 +78,15 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
             print("\n\tWhat would you like to do? ")
 
         ATMMachine()
+=======
+    if input1 < 4 :
+        print("\tPlease select ATM Transactions")
+        print("\tPress [1] Deposit")
+        print("\tPress [2] Withdraw")
+        print("\tPress [3] Balance Inquiry")
+        print("\tPress [4] Exit")
+
+        print("\n\tWhat would you like to do? ")
+        input1 = input("Please enter your choice: ")
+    
+>>>>>>> d32226badbd8be684aa56ee1e70f528bdf1a7d5c

@@ -1,0 +1,1 @@
+ JSON jauh lebih ringkas dan tidak memerlukan tag penutup seperti halnya XML dan XML tidak menggunakan sebuah array 

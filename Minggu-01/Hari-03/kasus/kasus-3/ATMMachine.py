@@ -8,7 +8,7 @@ class Deposit:
         Deposit.deposit = deposit
     
     def getDeposit(self):
-        print("Amount deposit", Deposit.deposit)
+        return deposit 
 
 class Withdraw:
     'Class for process a withdraw'
@@ -17,22 +17,23 @@ class Withdraw:
         print("Calling constructur for Withdraw Class")
 
     def setWithdraw(self, withdraw):
-        Withdraw.withdraw = wd
+        Withdraw.withdraw = withdraw
     
     def getWithdraw(self):
-        print("Amount withdraw", Withdraw.withdraw)
+        return withdraw
 
 class BalanceInquiry:
+    balance = 10000
     'Class for process a balance inquiry'
-    balance = 0
+    
     def __init__(self):
         print("Calling constructor for Balance class")
     
-    def setBalance(self, balance):
-        BalanceInquiry.balance = blnc 
+    def setBalance(self, b):
+        BalanceInquiry.balance = b
     
     def getBalance(self):
-        print("Amount balance", BalanceInquiry.balance)
+        return balance
 
 
 class ATMMachine(Deposit, Withdraw, BalanceInquiry):
@@ -60,31 +61,39 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
     
     def __init__(self):
         choice = 0
+        print("====================================================")
+        print("\tWelcome to this simple ATM machine")
+        print("====================================================")
+        print()
 
-    print("====================================================")
-    print("\tWelcome to this simple ATM machine")
-    print("====================================================")
-    print()
+        print("\tPlease select ATM Transactions")
+        print("\tPress [1] Deposit")
+        print("\tPress [2] Withdraw")
+        print("\tPress [3] Balance Inquiry")
+        print("\tPress [4] Exit")
 
-    print("\tPlease select ATM Transactions")
-    print("\tPress [1] Deposit")
-    print("\tPress [2] Withdraw")
-    print("\tPress [3] Balance Inquiry")
-    print("\tPress [4] Exit")
+        print("\n\tWhat would you like to do? ")
+            
 
-    print("\n\tWhat would you like to do? ")
-        
+        select = 0
+        print("\n\tPlease select correct transaction.")
+        while True:
+            try:
+                select = int(input("Please enter your choice: "))
+                if select == 1:
+                    deposit = int(input("Enter the amount of money to deposit: "))
+                    BalanceInquiry.balance = Deposit.deposit + BalanceInquiry.balance
+                    print("Your deposit is Rp ", BalanceInquiry.balance)
+                elif select == 2:
+                    print("\n\tTo withdraw, make sure that you have sufficient balance in your account.")
+                    withdraw = int(input("\tEnter amount of money to withdraw: "))
+                    print("Your withdraw is Rp ", withdraw)
+                elif select == 3:
+                    print("Your deposit now is Rp ", BalanceInquiry.balance - withdraw)
+                else:
+                    print("\n\tTransaction exited.")
+            
+                
 
-    select = 0
-    print("\n\tPlease select correct transaction.")
-    while True:
-        select = int(input("Please enter your choice: "))
-        if select == 1:
-            input("Enter the amount of money to deposit: ")
-            BalanceInquiry.balance = Deposit.deposit + BalanceInquiry.balance
-        elif select == 2:
-            print("\n\tTo withdraw, make sure that you have sufficient balance in your account.")
-            input("\tEnter amount of money to withdraw: ")
-        else:
-            print("\n\tTransaction exited.")
-        
+atm1 = ATMMachine()
+            

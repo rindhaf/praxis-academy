@@ -61,6 +61,7 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
     
     def __init__(self):
         choice = 0
+        select = 0
         print("====================================================")
         print("\tWelcome to this simple ATM machine")
         print("====================================================")
@@ -72,17 +73,14 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
         print("\tPress [3] Balance Inquiry")
         print("\tPress [4] Exit")
         print()
-        print("\n\tWhat would you like to do? ")
+        select = int(input("\n\tWhat would you like to do? "))
         print()
-
-        select = 0
-        print("\n\tPlease select correct transaction.")
-        while True:
-            select = int(input("Please enter your choice: "))
+        if (select < 1 or select > 4):
+            print("\n\tPlease select correct transaction.")
+        else:
             if select == 1:
-                deposit = int(input("Enter the amount of money to deposit: "))
-                self.deposit.setDeposit(deposit)
-                BalanceInquiry.balance = Deposit.deposit + BalanceInquiry.balance
+                deposit = int(input("\tEnter the amount of money to deposit: "))
+                BalanceInquiry.setBalance = BalanceInquiry.balance + Deposit.deposit
                 print("Your deposit is Rp ", BalanceInquiry.balance)
             elif select == 2:
                 print("\n\tTo withdraw, make sure that you have sufficient balance in your account.")
@@ -91,7 +89,6 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
             elif select == 3:
                 print("\n\tCheck your balance.")
                 print("Your deposit now is Rp ", BalanceInquiry.balance - withdraw)
-                break
             else:
                 print("\n\tTransaction exited.")                
 

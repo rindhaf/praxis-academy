@@ -71,29 +71,29 @@ class ATMMachine(Deposit, Withdraw, BalanceInquiry):
         print("\tPress [2] Withdraw")
         print("\tPress [3] Balance Inquiry")
         print("\tPress [4] Exit")
-
+        print()
         print("\n\tWhat would you like to do? ")
-            
+        print()
 
         select = 0
         print("\n\tPlease select correct transaction.")
         while True:
-            try:
-                select = int(input("Please enter your choice: "))
-                if select == 1:
-                    deposit = int(input("Enter the amount of money to deposit: "))
-                    BalanceInquiry.balance = Deposit.deposit + BalanceInquiry.balance
-                    print("Your deposit is Rp ", BalanceInquiry.balance)
-                elif select == 2:
-                    print("\n\tTo withdraw, make sure that you have sufficient balance in your account.")
-                    withdraw = int(input("\tEnter amount of money to withdraw: "))
-                    print("Your withdraw is Rp ", withdraw)
-                elif select == 3:
-                    print("Your deposit now is Rp ", BalanceInquiry.balance - withdraw)
-                else:
-                    print("\n\tTransaction exited.")
-            
-                
+            select = int(input("Please enter your choice: "))
+            if select == 1:
+                deposit = int(input("Enter the amount of money to deposit: "))
+                self.deposit.setDeposit(deposit)
+                BalanceInquiry.balance = Deposit.deposit + BalanceInquiry.balance
+                print("Your deposit is Rp ", BalanceInquiry.balance)
+            elif select == 2:
+                print("\n\tTo withdraw, make sure that you have sufficient balance in your account.")
+                withdraw = int(input("\tEnter amount of money to withdraw: "))
+                print("Your withdraw is Rp ", withdraw)
+            elif select == 3:
+                print("\n\tCheck your balance.")
+                print("Your deposit now is Rp ", BalanceInquiry.balance - withdraw)
+                break
+            else:
+                print("\n\tTransaction exited.")                
 
 atm1 = ATMMachine()
             

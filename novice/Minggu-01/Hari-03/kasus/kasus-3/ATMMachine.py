@@ -29,8 +29,8 @@ class BalanceInquiry:
     def __init__(self):
         print("Calling constructor for Balance class")
     
-    def setBalance(self, b):
-        BalanceInquiry.balance = b
+    def setBalance(self, balance):
+        BalanceInquiry.balance = balance
     
     def getBalance(self):
         return balance
